@@ -44,7 +44,7 @@ import {
     const dispatch = useDispatch();
     const [month, setMonth] = useState<number>(new Date().getMonth());
     const [year, setYear] = useState<number>(new Date().getFullYear());
-    const [dayNumber,setDayNumber] = useState<number>();
+    const [dayNumber,setDayNumber] = useState<number>(30);
     const [rowNumber, setRowNumber] = useState<number>();
 
     useEffect(()=> {
