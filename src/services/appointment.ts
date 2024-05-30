@@ -24,3 +24,13 @@ export const getAppointments = async () => {
         throw error;
     }
 }
+
+export const getOneAppointment = async (id: string | undefined) => {
+    try {
+        const response = await client.get(`/appointments/${id}`);
+        return response.data;
+    } catch (error) {
+        console.log(error);
+        throw error;
+    }
+}
